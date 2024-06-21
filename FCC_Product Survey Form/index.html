@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Survey Form</title>
+    
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+  <h1 id="title">Product Survey Form</h1>
+</body>
+<p id="description">Your feedback helps us create  more things you'll love</p>
+<form id="survey-form" method="post" action="#">
+  <fieldset>
+    <label id="name-label" for="name">Name:<input id="name" type="text" name="name-label" required placeholder="Name"></label>
+    <label id="email-label" for="email">Email:<input id="email" type="email" name="email-label" required placeholder="Email"></label>
+    <label id="number-label" for="number">Number:<input id="number" type="number" name="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" min="1" max="11" required placeholder="Number"></label>
+  </fieldset>
+  <fieldset>
+    <legend>Where do you usually buy our products?</legend>
+    <label for="online"><input id="online" type="radio" name="online-store" value="online" class="inline">Online</label>
+    <label for="store"><input id="store" type="radio" name="online-store" value="store" class="inline">Store near you</label>  
+  </fieldset>
+  <fieldset>
+    <label for="dropdown">Which flavor do you think is the best?<select id="dropdown" name="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Chocolate</option>
+      <option value="2">Vanilla</option>
+      <option value="3">Cookies'n Cream</option>
+      <option value="4">Strawberry</option>
+      <option value="5">Mocha</option>
+      </select>
+    </label>
+    <label for="comments">How can we improve our product?
+      <textarea id="comments" name="comments"></textarea>
+    </label>
+  </fieldset>
+  <fieldset>
+    <label for="checkboxes"><input class="inline" id="checkboxes" type="checkbox" name="receive-feedback" value="receive-feedback">Receive personal follow-up to your feedback</label>
+    <label for="checkboxes"><input class="inline" id="checkboxes" type="checkbox" name="terms and conditions" value="terms and conditions">I accept the <a href="https://www.jlbandiola.com/terms-of-service">terms and conditions</a></label>
+    <input id="submit" type="submit" value="Submit">
+  </fieldset>
+
+</form>
